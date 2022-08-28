@@ -8,7 +8,7 @@ use InterventionImage;
 class ImageService
 {
     public static function upload($imageFile,$folderName){
-        dd($imageFile);
+        // dd($imageFile);
         if(is_array($imageFile)){
             $file = $imageFile['image'];
         } else {
