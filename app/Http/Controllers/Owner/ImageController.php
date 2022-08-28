@@ -29,7 +29,7 @@ class ImageController extends Controller
 
     public function index()
     {
-        $images = Shop::where('owner_id', Auth::id())
+        $images = Image::where('owner_id', Auth::id())
         ->orderBy('updated_at', 'desc')
         ->paginate(20);
 
