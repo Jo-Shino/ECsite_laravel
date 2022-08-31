@@ -148,7 +148,6 @@ class OwnersController extends Controller
         ->route('admin.owners.index')
         ->with(['message' => 'オーナー情報を更新しました。',
                 'status' => 'info'
-    
         ]);
     }
 
